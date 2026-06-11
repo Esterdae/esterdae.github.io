@@ -1,4 +1,38 @@
 <!DOCTYPE html>
 <html>
-<h1>Testing, testing!</h1>
+<head>
+<title>Collection</title>
+<style>
+sup {
+ cursor: pointer;
+ color: red;
+}
+.xf {
+ display: none;
+ font-family: courier;
+}
+</style>
+</head>
+<body>
+<p>
+bababbababa
+<sup onclick="tog()">a</sup>
+</p>
+<div id="supa" class="xf">
+sneaky sneaky
+</div>
+<p>
+bababbabababba
+</p>
+<script>
+function tog() {
+ const atx = document.getElementById("supa");
+ if (atx.style.display === "none" || atx.style.display === "") {
+  atx.style.display = "block";
+ } else {
+  atx.style.display = "none";
+ }
+}
+</script>
+</body>
 </html>
