@@ -18,19 +18,20 @@ sup {
 </head>
 <body>
 <h1>
-Welcome to my website
-<sup onclick="tog()">a</sup>
+Welcome to my website<sup onclick="tog('jq')">a</sup>
 </h1>
-<div id="supa" class="xf">
+<div id="jq" class="xf">
 made by esterdae, which you can see more on esolangs.org (user:esterdae) and this is primarily just a list of links to the interactive interpreters of said esolangs!<br>
-i think thats the correct term
+ i think thats the correct term
 </div>
-<p>
-Frogrid
+<p>Frogrid<sup onclick="tog('qq')">b</sup>
 </p>
+<div id="qq" class="xf">
+As you can guess from the language's name, you have to RID the FROGs on a GRID of FROGs and you must learn how a frog jumps but never walks
+</div>
 <script>
-function tog() {
- const atx = document.getElementById("supa");
+function tog(id) {
+ const atx = document.getElementById(id);
  if (atx.style.display === "none" || atx.style.display === "") {
   atx.style.display = "block";
  } else {
@@ -39,5 +40,4 @@ function tog() {
 }
 </script>
 </body>
-</html></body>
 </html>
